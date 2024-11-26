@@ -1,0 +1,102 @@
+[
+  {
+    "autorId": "A001",
+    "nome": "Gabriel García Márquez",
+    "dataNascimento": "1927-03-06T00:00:00Z",
+    "dataFalecimento": "2014-04-17T00:00:00Z",
+    "contacto": {
+      "telefone": "+351912345678",
+      "email": "gabriel@example.com"
+    }
+  },
+  {
+    "autorId": "A002",
+    "nome": "Antoine de Saint-Exupéry",
+    "dataNascimento": "1900-06-29T00:00:00Z",
+    "dataFalecimento": "1944-07-31T00:00:00Z",
+    "contacto": {
+      "telefone": "+351912345679",
+      "email": "antoine@example.com"
+    }
+  },
+  {
+    "autorId": "A003",
+    "nome": "Harper Lee",
+    "dataNascimento": "1926-04-28T00:00:00Z",
+    "dataFalecimento": "2016-02-19T00:00:00Z",
+    "contacto": {
+      "telefone": "+351912345680",
+      "email": "harper@example.com"
+    }
+  },
+  {
+    "autorId": "A004",
+    "nome": "George Orwell",
+    "dataNascimento": "1903-06-25T00:00:00Z",
+    "dataFalecimento": "1950-01-21T00:00:00Z",
+    "contacto": {
+      "telefone": "+351912345681",
+      "email": "george@example.com"
+    }
+  },
+  {
+    "autorId": "A005",
+    "nome": "Miguel de Cervantes",
+    "dataNascimento": "1547-09-29T00:00:00Z",
+    "dataFalecimento": "1616-04-23T00:00:00Z",
+    "contacto": {
+      "telefone": "+351912345682",
+      "email": "cervantes@example.com"
+    }
+  },
+  {
+    "autorId": "A006",
+    "nome": "Leo Tolstoy",
+    "dataNascimento": "1828-09-09T00:00:00Z",
+    "dataFalecimento": "1910-11-20T00:00:00Z",
+    "contacto": {
+      "telefone": "+351912345683",
+      "email": "tolstoy@example.com"
+    }
+  },
+  {
+    "autorId": "A007",
+    "nome": "F. Scott Fitzgerald",
+    "dataNascimento": "1896-09-24T00:00:00Z",
+    "dataFalecimento": "1940-12-21T00:00:00Z",
+    "contacto": {
+      "telefone": "+351912345684",
+      "email": "fitzgerald@example.com"
+    }
+  },
+  {
+    "autorId": "A008",
+    "nome": "Jane Austen",
+    "dataNascimento": "1775-12-16T00:00:00Z",
+    "dataFalecimento": "1817-07-18T00:00:00Z",
+    "contacto": {
+      "telefone": "+351912345685",
+      "email": "austen@example.com"
+    }
+  },
+  {
+    "autorId": "A009",
+    "nome": "Fyodor Dostoevsky",
+    "dataNascimento": "1821-11-11T00:00:00Z",
+    "dataFalecimento": "1881-02-09T00:00:00Z",
+    "contacto": {
+      "telefone": "+351912345686",
+      "email": "dostoevsky@example.com"
+    }
+  },
+  {
+    "autorId": "A010",
+    "nome": "J.D. Salinger",
+    "dataNascimento": "1919-01-01T00:00:00Z",
+    "dataFalecimento": "2010-01-27T00:00:00Z",
+    "contacto": {
+      "telefone": "+351912345687",
+      "email": "salinger@example.com"
+    }
+  }
+]

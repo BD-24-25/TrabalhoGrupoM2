@@ -1,0 +1,312 @@
+[
+  {
+    "livroId": "L001",
+    "tituloOriginal": "Cien Años de Soledad",
+    "autorIds": ["A001"],
+    "linguaOriginal": "Espanhol",
+    "anoEscrito": 1967,
+    "custoDireitos": 50000,
+    "paisesPublicacao": ["Portugal", "Brasil", "Espanha"],
+    "traducoes": [
+      {
+        "traducaoId": "T001",
+        "tituloTraduzido": "Cem Anos de Solidão",
+        "anoTraducao": 1970,
+        "lingua": "Português",
+        "tradutores": ["José Agualusa"],
+        "custoTraducao": 2000
+      }
+    ],
+    "edicoes": [
+      {
+        "edicaoId": "E001",
+        "numeroEdicao": 1,
+        "anoEdicao": 1971,
+        "isbn": "978-3-16-148410-0",
+        "paisesVenda": ["Portugal", "Brasil"],
+        "traducaoId": "T001",
+        "vendasTotais": 50000,
+        "custoProducao": 10000
+      }
+    ]
+  },
+  {
+    "livroId": "L002",
+    "tituloOriginal": "Le Petit Prince",
+    "autorIds": ["A002"],
+    "linguaOriginal": "Francês",
+    "anoEscrito": 1943,
+    "custoDireitos": 30000,
+    "paisesPublicacao": ["França", "Brasil", "Estados Unidos"],
+    "traducoes": [
+      {
+        "traducaoId": "T002",
+        "tituloTraduzido": "O Pequeno Príncipe",
+        "anoTraducao": 1950,
+        "lingua": "Português",
+        "tradutores": ["Manuel Costa"],
+        "custoTraducao": 1500
+      }
+    ],
+    "edicoes": [
+      {
+        "edicaoId": "E002",
+        "numeroEdicao": 1,
+        "anoEdicao": 1951,
+        "isbn": "978-1-16-128410-0",
+        "paisesVenda": ["Brasil", "Portugal"],
+        "traducaoId": "T002",
+        "vendasTotais": 60000,
+        "custoProducao": 12000
+      }
+    ]
+  },
+  {
+    "livroId": "L003",
+    "tituloOriginal": "To Kill a Mockingbird",
+    "autorIds": ["A003"],
+    "linguaOriginal": "Inglês",
+    "anoEscrito": 1960,
+    "custoDireitos": 45000,
+    "paisesPublicacao": ["Estados Unidos", "Reino Unido", "Canadá"],
+    "traducoes": [
+      {
+        "traducaoId": "T003",
+        "tituloTraduzido": "Matar um Rouxinol",
+        "anoTraducao": 1965,
+        "lingua": "Português",
+        "tradutores": ["Ana Silva"],
+        "custoTraducao": 3000
+      }
+    ],
+    "edicoes": [
+      {
+        "edicaoId": "E003",
+        "numeroEdicao": 1,
+        "anoEdicao": 1966,
+        "isbn": "978-3-16-158410-0",
+        "paisesVenda": ["Brasil", "Portugal"],
+        "traducaoId": "T003",
+        "vendasTotais": 70000,
+        "custoProducao": 15000
+      }
+    ]
+  },
+  {
+    "livroId": "L004",
+    "tituloOriginal": "1984",
+    "autorIds": ["A004"],
+    "linguaOriginal": "Inglês",
+    "anoEscrito": 1949,
+    "custoDireitos": 40000,
+    "paisesPublicacao": ["Reino Unido", "Espanha", "Itália"],
+    "traducoes": [
+      {
+        "traducaoId": "T004",
+        "tituloTraduzido": "Mil Novecentos e Oitenta e Quatro",
+        "anoTraducao": 1955,
+        "lingua": "Português",
+        "tradutores": ["João Pereira"],
+        "custoTraducao": 2500
+      }
+    ],
+    "edicoes": [
+      {
+        "edicaoId": "E004",
+        "numeroEdicao": 1,
+        "anoEdicao": 1956,
+        "isbn": "978-3-16-138410-0",
+        "paisesVenda": ["Portugal", "Brasil"],
+        "traducaoId": "T004",
+        "vendasTotais": 80000,
+        "custoProducao": 20000
+      }
+    ]
+  },
+  {
+    "livroId": "L005",
+    "tituloOriginal": "Don Quixote",
+    "autorIds": ["A005"],
+    "linguaOriginal": "Espanhol",
+    "anoEscrito": 1605,
+    "custoDireitos": 60000,
+    "paisesPublicacao": ["Espanha", "Brasil", "México"],
+    "traducoes": [
+      {
+        "traducaoId": "T005",
+        "tituloTraduzido": "Dom Quixote",
+        "anoTraducao": 1615,
+        "lingua": "Português",
+        "tradutores": ["Carlos Almeida"],
+        "custoTraducao": 5000
+      }
+    ],
+    "edicoes": [
+      {
+        "edicaoId": "E005",
+        "numeroEdicao": 1,
+        "anoEdicao": 1616,
+        "isbn": "978-3-16-198410-0",
+        "paisesVenda": ["Portugal", "Brasil"],
+        "traducaoId": "T005",
+        "vendasTotais": 90000,
+        "custoProducao": 25000
+      }
+    ]
+  },
+  {
+    "livroId": "L006",
+    "tituloOriginal": "War and Peace",
+    "autorIds": ["A006"],
+    "linguaOriginal": "Russo",
+    "anoEscrito": 1869,
+    "custoDireitos": 55000,
+    "paisesPublicacao": ["Rússia", "Portugal", "França"],
+    "traducoes": [
+      {
+        "traducaoId": "T006",
+        "tituloTraduzido": "Guerra e Paz",
+        "anoTraducao": 1875,
+        "lingua": "Português",
+        "tradutores": ["Miguel Sousa"],
+        "custoTraducao": 3500
+      }
+    ],
+    "edicoes": [
+      {
+        "edicaoId": "E006",
+        "numeroEdicao": 1,
+        "anoEdicao": 1876,
+        "isbn": "978-3-16-178410-0",
+        "paisesVenda": ["Portugal", "Brasil"],
+        "traducaoId": "T006",
+        "vendasTotais": 85000,
+        "custoProducao": 30000
+      }
+    ]
+  },
+  {
+    "livroId": "L007",
+    "tituloOriginal": "The Great Gatsby",
+    "autorIds": ["A007"],
+    "linguaOriginal": "Inglês",
+    "anoEscrito": 1925,
+    "custoDireitos": 47000,
+    "paisesPublicacao": ["Estados Unidos", "Canadá", "Reino Unido"],
+    "traducoes": [
+      {
+        "traducaoId": "T007",
+        "tituloTraduzido": "O Grande Gatsby",
+        "anoTraducao": 1930,
+        "lingua": "Português",
+        "tradutores": ["Maria Fernandes"],
+        "custoTraducao": 2700
+      }
+    ],
+    "edicoes": [
+      {
+        "edicaoId": "E007",
+        "numeroEdicao": 1,
+        "anoEdicao": 1931,
+        "isbn": "978-3-16-168410-0",
+        "paisesVenda": ["Brasil", "Portugal"],
+        "traducaoId": "T007",
+        "vendasTotais": 75000,
+        "custoProducao": 17000
+      }
+    ]
+  },
+  {
+    "livroId": "L008",
+    "tituloOriginal": "Pride and Prejudice",
+    "autorIds": ["A008"],
+    "linguaOriginal": "Inglês",
+    "anoEscrito": 1813,
+    "custoDireitos": 38000,
+    "paisesPublicacao": ["Reino Unido", "Espanha", "Itália"],
+    "traducoes": [
+      {
+        "traducaoId": "T008",
+        "tituloTraduzido": "Orgulho e Preconceito",
+        "anoTraducao": 1820,
+        "lingua": "Português",
+        "tradutores": ["Clara Martins"],
+        "custoTraducao": 2000
+      }
+    ],
+    "edicoes": [
+      {
+        "edicaoId": "E008",
+        "numeroEdicao": 1,
+        "anoEdicao": 1821,
+        "isbn": "978-3-16-158410-0",
+        "paisesVenda": ["Portugal", "Brasil"],
+        "traducaoId": "T008",
+        "vendasTotais": 50000,
+        "custoProducao": 15000
+      }
+    ]
+  },
+  {
+    "livroId": "L009",
+    "tituloOriginal": "Crime and Punishment",
+    "autorIds": ["A009"],
+    "linguaOriginal": "Russo",
+    "anoEscrito": 1866,
+    "custoDireitos": 52000,
+    "paisesPublicacao": ["Rússia", "Portugal", "Alemanha"],
+    "traducoes": [
+      {
+        "traducaoId": "T009",
+        "tituloTraduzido": "Crime e Castigo",
+        "anoTraducao": 1870,
+        "lingua": "Português",
+        "tradutores": ["José Carlos"],
+        "custoTraducao": 3200
+      }
+    ],
+    "edicoes": [
+      {
+        "edicaoId": "E009",
+        "numeroEdicao": 1,
+        "anoEdicao": 1871,
+        "isbn": "978-3-16-148410-1",
+        "paisesVenda": ["Brasil", "Portugal"],
+        "traducaoId": "T009",
+        "vendasTotais": 68000,
+        "custoProducao": 21000
+      }
+    ]
+  },
+  {
+    "livroId": "L010",
+    "tituloOriginal": "The Catcher in the Rye",
+    "autorIds": ["A010"],
+    "linguaOriginal": "Inglês",
+    "anoEscrito": 1951,
+    "custoDireitos": 44000,
+    "paisesPublicacao": ["Estados Unidos", "Canadá", "Austrália"],
+    "traducoes": [
+      {
+        "traducaoId": "T010",
+        "tituloTraduzido": "À Espera no Centeio",
+        "anoTraducao": 1955,
+        "lingua": "Português",
+        "tradutores": ["Pedro Sousa"],
+        "custoTraducao": 3000
+      }
+    ],
+    "edicoes": [
+      {
+        "edicaoId": "E010",
+        "numeroEdicao": 1,
+        "anoEdicao": 1956,
+        "isbn": "978-3-16-138410-2",
+        "paisesVenda": ["Portugal", "Brasil"],
+        "traducaoId": "T010",
+        "vendasTotais": 70000,
+        "custoProducao": 18000
+      }
+    ]
+  }
+]
