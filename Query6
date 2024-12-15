@@ -1,0 +1,80 @@
+[
+  {
+    "$unwind": "$edicoes"
+  },
+  {
+    "$lookup": {
+      "from": "livros",
+      "localField": "edicoes.traducaoId",
+      "foreignField": "traducoes.traducaoId",
+      "as": "traducaoInfo"
+    }
+  },
+  {
+    "$unwind": {
+      "path": "$traducaoInfo",
+      "preserveNullAndEmptyArrays": true
+    }
+  },
+  {
+    "$project": {
+      "livroId": "$livroId",
+      "numeroEdicao": "$edicoes.numeroEdicao",
+      "tituloTraduzido": {
+        "$arrayElemAt": [
+          {
+            "$map": {
+              "input": {
+                "$filter": {
+                  "input": "$traducoes",
+                  "as": "traducao",
+                  "cond": { "$eq": ["$$traducao.traducaoId", "$edicoes.traducaoId"] }
+                }
+              },
+              "as": "traducao",
+              "in": "$$traducao.tituloTraduzido"
+            }
+          },
+          0
+        ]
+      },
+      "paisesVenda": "$edicoes.paisesVenda",
+      "lingua": {
+        "$arrayElemAt": [
+          {
+            "$map": {
+              "input": {
+                "$filter": {
+                  "input": "$traducoes",
+                  "as": "traducao",
+                  "cond": { "$eq": ["$$traducao.traducaoId", "$edicoes.traducaoId"] }
+                }
+              },
+              "as": "traducao",
+              "in": "$$traducao.lingua"
+            }
+          },
+          0
+        ]
+      },
+      "tradutores": {
+        "$arrayElemAt": [
+          {
+            "$map": {
+              "input": {
+                "$filter": {
+                  "input": "$traducoes",
+                  "as": "traducao",
+                  "cond": { "$eq": ["$$traducao.traducaoId", "$edicoes.traducaoId"] }
+                }
+              },
+              "as": "traducao",
+              "in": "$$traducao.tradutores"
+            }
+          },
+          0
+        ]
+      }
+    }
+  }
+]

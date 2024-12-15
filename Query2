@@ -1,0 +1,29 @@
+[
+  {
+    "$unwind": {
+      "path": "$traducoes",
+      "preserveNullAndEmptyArrays": true
+    }
+  },
+  {
+    "$group": {
+      "_id": "$livroId",
+      "titulo": { "$first": "$tituloOriginal" },
+      "totalVendas": { "$sum": { "$ifNull": ["$traducoes.vendas", 0] } },
+      "totalReceitas": { "$sum": { "$ifNull": ["$traducoes.Receitas", 0] } },
+      "totalCustoProducao": { "$sum": { "$ifNull": ["$traducoes.custoProducao", 0] } },
+      "numeroEcoes": { "$first": { "$size": "$edicoes" } }
+    }
+  },
+  {
+    "$project": {
+      "_id": 0,
+      "Livro ID": "$_id",
+      "Título": "$titulo",
+      "Total de Vendas": "$totalVendas",
+      "Total de Receitas": "$totalReceitas",
+      "Custo Total de Produção": "$totalCustoProducao",
+      "Número Total de Edições": "$numeroEcoes"
+    }
+  }
+]
