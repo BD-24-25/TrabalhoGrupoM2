@@ -1,102 +1,244 @@
-[
-  {
-    "autorId": "A001",
-    "nome": "Gabriel García Márquez",
-    "dataNascimento": "1927-03-06T00:00:00Z",
-    "dataFalecimento": "2014-04-17T00:00:00Z",
-    "contacto": {
-      "telefone": "+351912345678",
-      "email": "gabriel@example.com"
+[{
+  "_id": {
+    "$oid": "675df9b75b194836a0ef37d2"
+  },
+  "autorId": "A001",
+  "nome": "Fernando Pessoa",
+  "livros": [
+    "L001"
+  ],
+  "dataNascimento": {
+    "$date": {
+      "$numberLong": "-2573510400000"
     }
   },
-  {
-    "autorId": "A002",
-    "nome": "Antoine de Saint-Exupéry",
-    "dataNascimento": "1900-06-29T00:00:00Z",
-    "dataFalecimento": "1944-07-31T00:00:00Z",
-    "contacto": {
-      "telefone": "+351912345679",
-      "email": "antoine@example.com"
+  "dataFalecimento": {
+    "$date": {
+      "$numberLong": "-1075766400000"
     }
   },
-  {
-    "autorId": "A003",
-    "nome": "Harper Lee",
-    "dataNascimento": "1926-04-28T00:00:00Z",
-    "dataFalecimento": "2016-02-19T00:00:00Z",
-    "contacto": {
-      "telefone": "+351912345680",
-      "email": "harper@example.com"
+  "inicioEscrita": 1905,
+  "fimEscrita": 1935
+},
+{
+  "_id": {
+    "$oid": "675df9b75b194836a0ef37d3"
+  },
+  "autorId": "A002",
+  "nome": "José Saramago",
+  "livros": [
+    "L002"
+  ],
+  "dataNascimento": {
+    "$date": {
+      "$numberLong": "-1487203200000"
     }
   },
-  {
-    "autorId": "A004",
-    "nome": "George Orwell",
-    "dataNascimento": "1903-06-25T00:00:00Z",
-    "dataFalecimento": "1950-01-21T00:00:00Z",
-    "contacto": {
-      "telefone": "+351912345681",
-      "email": "george@example.com"
+  "dataFalecimento": {
+    "$date": "2010-06-18T00:00:00.000Z"
+  },
+  "inicioEscrita": 1947,
+  "fimEscrita": 2010
+},
+{
+  "_id": {
+    "$oid": "675df9b75b194836a0ef37d4"
+  },
+  "autorId": "A003",
+  "nome": "Eça de Queirós",
+  "livros": [
+    "L003"
+  ],
+  "dataNascimento": {
+    "$date": {
+      "$numberLong": "-3916252800000"
     }
   },
-  {
-    "autorId": "A005",
-    "nome": "Miguel de Cervantes",
-    "dataNascimento": "1547-09-29T00:00:00Z",
-    "dataFalecimento": "1616-04-23T00:00:00Z",
-    "contacto": {
-      "telefone": "+351912345682",
-      "email": "cervantes@example.com"
+  "dataFalecimento": {
+    "$date": {
+      "$numberLong": "-2189376000000"
     }
   },
-  {
-    "autorId": "A006",
-    "nome": "Leo Tolstoy",
-    "dataNascimento": "1828-09-09T00:00:00Z",
-    "dataFalecimento": "1910-11-20T00:00:00Z",
-    "contacto": {
-      "telefone": "+351912345683",
-      "email": "tolstoy@example.com"
+  "inicioEscrita": 1866,
+  "fimEscrita": 1899
+},
+{
+  "_id": {
+    "$oid": "675df9b75b194836a0ef37d5"
+  },
+  "autorId": "A004",
+  "nome": "Sophia de Mello Breyner Andresen",
+  "livros": [
+    "L004"
+  ],
+  "dataNascimento": {
+    "$date": {
+      "$numberLong": "-1582761600000"
     }
   },
-  {
-    "autorId": "A007",
-    "nome": "F. Scott Fitzgerald",
-    "dataNascimento": "1896-09-24T00:00:00Z",
-    "dataFalecimento": "1940-12-21T00:00:00Z",
-    "contacto": {
-      "telefone": "+351912345684",
-      "email": "fitzgerald@example.com"
+  "dataFalecimento": {
+    "$date": "2004-07-02T00:00:00.000Z"
+  },
+  "inicioEscrita": 1940,
+  "fimEscrita": 2003
+},
+{
+  "_id": {
+    "$oid": "675df9b75b194836a0ef37d6"
+  },
+  "autorId": "A005",
+  "nome": "Camões",
+  "livros": [
+    "L005"
+  ],
+  "dataNascimento": {
+    "$date": {
+      "$numberLong": "-14074473600000"
     }
   },
-  {
-    "autorId": "A008",
-    "nome": "Jane Austen",
-    "dataNascimento": "1775-12-16T00:00:00Z",
-    "dataFalecimento": "1817-07-18T00:00:00Z",
-    "contacto": {
-      "telefone": "+351912345685",
-      "email": "austen@example.com"
+  "dataFalecimento": {
+    "$date": {
+      "$numberLong": "-12293337600000"
     }
   },
-  {
-    "autorId": "A009",
-    "nome": "Fyodor Dostoevsky",
-    "dataNascimento": "1821-11-11T00:00:00Z",
-    "dataFalecimento": "1881-02-09T00:00:00Z",
-    "contacto": {
-      "telefone": "+351912345686",
-      "email": "dostoevsky@example.com"
+  "inicioEscrita": 1544,
+  "fimEscrita": 1579
+},
+{
+  "_id": {
+    "$oid": "675df9b75b194836a0ef37d7"
+  },
+  "autorId": "A006",
+  "nome": "Agustina Bessa-Luís",
+  "livros": [
+    "L006"
+  ],
+  "dataNascimento": {
+    "$date": {
+      "$numberLong": "-1489968000000"
     }
   },
-  {
-    "autorId": "A010",
-    "nome": "J.D. Salinger",
-    "dataNascimento": "1919-01-01T00:00:00Z",
-    "dataFalecimento": "2010-01-27T00:00:00Z",
-    "contacto": {
-      "telefone": "+351912345687",
-      "email": "salinger@example.com"
+  "dataFalecimento": {
+    "$date": "2019-06-03T00:00:00.000Z"
+  },
+  "inicioEscrita": 1948,
+  "fimEscrita": 2001
+},
+{
+  "_id": {
+    "$oid": "675df9b75b194836a0ef37d8"
+  },
+  "autorId": "A007",
+  "nome": "Alice Vieira",
+  "livros": [
+    "L007"
+  ],
+  "dataNascimento": {
+    "$date": {
+      "$numberLong": "-845337600000"
     }
-  }
-]
+  },
+  "dataFalecimento": null,
+  "inicioEscrita": 1965,
+  "fimEscrita": null
+},
+{
+  "_id": {
+    "$oid": "675df9b75b194836a0ef37d9"
+  },
+  "autorId": "A008",
+  "nome": "António Lobo Antunes",
+  "livros": [
+    "L008"
+  ],
+  "dataNascimento": {
+    "$date": {
+      "$numberLong": "-862617600000"
+    }
+  },
+  "dataFalecimento": null,
+  "inicioEscrita": 1979,
+  "fimEscrita": null
+},
+{
+  "_id": {
+    "$oid": "675df9b75b194836a0ef37da"
+  },
+  "autorId": "A009",
+  "nome": "Miguel Torga",
+  "livros": [
+    "L009"
+  ],
+  "dataNascimento": {
+    "$date": {
+      "$numberLong": "-1968883200000"
+    }
+  },
+  "dataFalecimento": {
+    "$date": "1995-01-17T00:00:00.000Z"
+  },
+  "inicioEscrita": 1927,
+  "fimEscrita": 1994
+},
+{
+  "_id": {
+    "$oid": "675df9b75b194836a0ef37db"
+  },
+  "autorId": "A010",
+  "nome": "José Régio",
+  "livros": [
+    "L010"
+  ],
+  "dataNascimento": {
+    "$date": {
+      "$numberLong": "-2155075200000"
+    }
+  },
+  "dataFalecimento": {
+    "$date": {
+      "$numberLong": "-864000000"
+    }
+  },
+  "inicioEscrita": 1925,
+  "fimEscrita": 1968
+},
+{
+  "_id": "A005",
+  "totalVendas": 105000
+},
+{
+  "_id": "A004",
+  "totalVendas": 60000
+},
+{
+  "_id": "A007",
+  "totalVendas": 35000
+},
+{
+  "_id": "A006",
+  "totalVendas": 45000
+},
+{
+  "_id": "A009",
+  "totalVendas": 22500
+},
+{
+  "_id": "A008",
+  "totalVendas": 37000
+},
+{
+  "_id": "A001",
+  "totalVendas": 90000
+},
+{
+  "_id": "A002",
+  "totalVendas": 90000
+},
+{
+  "_id": "A003",
+  "totalVendas": 90000
+},
+{
+  "_id": "A010",
+  "totalVendas": 40000
+}]
