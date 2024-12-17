@@ -1,69 +1,93 @@
 [
   {
-    "$lookup": {
-      "from": "Autores",
-      "localField": "autorIds",
-      "foreignField": "autorId",
-      "as": "author_details"
+    $lookup: {
+      from: "Autores",
+      localField: "autorIds",
+      foreignField: "autorId",
+      as: "author_details"
     }
   },
   {
-    "$unwind": "$author_details"
+    $unwind: "$author_details"
   },
   {
-    "$addFields": {
-      "dataNascimento": {
-        "$dateFromString": { "dateString": "$author_details.dataNascimento" }
-      },
-      "dataFalecimento": {
-        "$cond": {
-          "if": { "$ne": ["$author_details.dataFalecimento", null] },
-          "then": { "$dateFromString": { "dateString": "$author_details.dataFalecimento" } },
-          "else": null
-        }
-      }
-    }
-  },
-  {
-    "$addFields": {
-      "idade": {
-        "$cond": [
-          { "$ne": ["$dataFalecimento", null] },
-          { "$subtract": [{ "$year": "$dataFalecimento" }, { "$year": "$dataNascimento" }] },
-          { "$subtract": [{ "$year": "$$NOW" }, { "$year": "$dataNascimento" }] }
+    $addFields: {
+      idade: {
+        $cond: [
+          {
+            $gt: [
+              "$author_details.dataFalecimento",
+              null
+            ]
+          },
+          {
+            $subtract: [
+              {
+                $year:
+                  "$author_details.dataFalecimento"
+              },
+              {
+                $year:
+                  "$author_details.dataNascimento"
+              }
+            ]
+          },
+          {
+            $subtract: [
+              2024,
+              {
+                $year:
+                  "$author_details.dataNascimento"
+              }
+            ]
+          }
         ]
       },
-      "anosEscrita": {
-        "$subtract": ["$author_details.fimEscrita", "$author_details.inicioEscrita"]
+      anoEscrita: {
+        $cond: [
+          {
+            $gt: [
+              "$author_details.fimEscrita",
+              null
+            ]
+          },
+          {
+            $subtract: [
+              "$author_details.fimEscrita",
+              "$author_details.inicioEscrita"
+            ]
+          },
+          {
+            $subtract: [
+              2024,
+              "$author_details.inicioEscrita"
+            ]
+          }
+        ]
       }
     }
   },
   {
-    "$group": {
-      "_id": "$author_details.autorId",
-      "nome": { "$first": "$author_details.nome" },
-      "idade": { "$first": "$idade" },
-      "anosEscrita": { "$first": "$anosEscrita" },
-      "totalLivrosVendidos": {
-        "$sum": {
-          "$sum": {
-            "$map": {
-              "input": { "$ifNull": ["$traducoes", []] },
-              "as": "traducao",
-              "in": { "$ifNull": ["$$traducao.vendas", 0] }
+    $group: {
+      _id: "$author_details.autorId",
+      nome: { $first: "$author_details.nome" },
+      idade: { $first: "$idade" },
+      anoEscrita: { $first: "$anoEscrita" },
+      totalLivrosVendidos: {
+        $sum: {
+          $sum: {
+            $map: {
+              input: {
+                $ifNull: ["$traducoes", []]
+              },
+              as: "traducao",
+              in: {
+                $ifNull: ["$$traducao.vendas", 0]
+              }
             }
           }
         }
       }
-    }
-  },
-  {
-    "$project": {
-      "_id": 0,
-      "nome": 1,
-      "idade": 1,
-      "anosEscrita": 1,
-      "totalLivrosVendidos": 1
     }
   }
 ]
